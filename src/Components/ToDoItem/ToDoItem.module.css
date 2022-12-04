@@ -1,0 +1,44 @@
+.item {
+    margin: 5px;
+    background-color: #fff1da;
+    border-radius: 8px;
+    padding: 5px 3px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 500px;
+  }
+   
+  .checkbox:checked + .summary {
+    text-decoration: line-through;
+  }
+   
+  .summary {
+    font-size: 14px;
+    font-weight: 400;
+  }
+   
+  .priority {
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-left: auto;
+    background-color: black;
+  }
+   
+  .low {
+    composes: priority;
+    background-color: #388edd;
+  }
+   
+  .medium {
+    composes: priority;
+    background-color: #f3de1f;
+  }
+   
+  .high {
+    composes: priority;
+    background-color: #e75252;
+  }
